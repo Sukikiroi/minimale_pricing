@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import CardContainer from "./card/cardContainer";
+import Home from "./eCommerce/home"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        backgroundColor: "#6557FF",
+        width: "80%",
+        height: "600px",
+        alignItems: "center",
+        margin: "60px",
+        padding: "30px",
+      }}
+    >
+      <Home/>
+      {/* <CardContainer width="300px" height="300px" backgroundColor="white" />
+      <CardContainer width="300px" height="300px" backgroundColor="black" />
+      <CardContainer width="300px" height="300px" backgroundColor="white" /> */}
     </div>
   );
 }
